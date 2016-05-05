@@ -23,7 +23,7 @@ class OperationController < ApplicationController
 		@operation.estimate
 		@operation.t0 = Time.new
 		@operation.save
-		redirect_to new_operation_path
+		#redirect_to new_operation_path
 	end
 
 	def answer

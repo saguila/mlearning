@@ -870,3 +870,508 @@ MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>
 MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.00045200000000000004s
 Redirected to http://localhost:3000/operation
 Completed 302 Found in 2ms
+
+
+Started GET "/" for ::1 at 2016-05-05 18:58:45 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 24ms (Views: 14.9ms)
+
+
+Started GET "/" for ::1 at 2016-05-05 18:58:52 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms)
+
+
+Started GET "/operations" for ::1 at 2016-05-05 18:58:53 +0200
+
+ActionController::RoutingError (No route matches [GET] "/operations"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.9ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (109.6ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (204.9ms)
+
+
+Started GET "/operations" for ::1 at 2016-05-05 18:58:56 +0200
+
+ActionController::RoutingError (No route matches [GET] "/operations"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (104.7ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.2ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (154.7ms)
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3cf7'), "_op"=>:add, "op1"=>2, "op2"=>1, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.0009469999999999999s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 24ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3cf8'), "_op"=>:add, "op1"=>8, "op2"=>7, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.0006060000000000001s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 3ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3cf9'), "_op"=>:add, "op1"=>7, "op2"=>0, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000527s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 3ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3cfa'), "_op"=>:add, "op1"=>5, "op2"=>9, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.00045900000000000004s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3cfb'), "_op"=>:add, "op1"=>5, "op2"=>0, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000421s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3cfc'), "_op"=>:add, "op1"=>0, "op2"=>1, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000781s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 4ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3cfd'), "_op"=>:add, "op1"=>6, "op2"=>6, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000484s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3cfe'), "_op"=>:add, "op1"=>3, "op2"=>1, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000531s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3cff'), "_op"=>:add, "op1"=>6, "op2"=>5, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.00048s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3d00'), "_op"=>:add, "op1"=>3, "op2"=>1, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000462s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3d01'), "_op"=>:add, "op1"=>8, "op2"=>2, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.0005530000000000001s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 3ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3d02'), "_op"=>:add, "op1"=>2, "op2"=>7, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.00041s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3d03'), "_op"=>:add, "op1"=>5, "op2"=>2, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000448s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3d04'), "_op"=>:add, "op1"=>3, "op2"=>4, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.00048s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3d05'), "_op"=>:add, "op1"=>0, "op2"=>1, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000469s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3d06'), "_op"=>:add, "op1"=>5, "op2"=>9, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.00044100000000000004s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 18:58:57 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7bd1d67adf17d9ce3d07'), "_op"=>:add, "op1"=>5, "op2"=>4, "t0"=>2016-05-05 16:58:57 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000509s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/" for ::1 at 2016-05-05 19:03:07 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.4ms)
+Completed 200 OK in 17ms (Views: 9.2ms)
+
+
+Started GET "/operations" for ::1 at 2016-05-05 19:03:10 +0200
+
+ActionController::RoutingError (No route matches [GET] "/operations"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.2ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (86.3ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (170.7ms)
+
+
+Started GET "/operations" for ::1 at 2016-05-05 19:03:14 +0200
+
+ActionController::RoutingError (No route matches [GET] "/operations"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (102.6ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.6ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Dell/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (167.8ms)
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea70992'), "_op"=>:add, "op1"=>9, "op2"=>1, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.001044s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 23ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea70993'), "_op"=>:add, "op1"=>5, "op2"=>2, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000493s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 3ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea70994'), "_op"=>:add, "op1"=>5, "op2"=>6, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000439s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea70995'), "_op"=>:add, "op1"=>9, "op2"=>1, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000464s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea70996'), "_op"=>:add, "op1"=>5, "op2"=>3, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000468s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea70997'), "_op"=>:add, "op1"=>1, "op2"=>5, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000434s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea70998'), "_op"=>:add, "op1"=>9, "op2"=>2, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000444s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea70999'), "_op"=>:add, "op1"=>8, "op2"=>6, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000431s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea7099a'), "_op"=>:add, "op1"=>4, "op2"=>8, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000446s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea7099b'), "_op"=>:add, "op1"=>4, "op2"=>2, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000504s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea7099c'), "_op"=>:add, "op1"=>0, "op2"=>2, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000524s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 3ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea7099d'), "_op"=>:add, "op1"=>8, "op2"=>3, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.0004930000000000001s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea7099e'), "_op"=>:add, "op1"=>4, "op2"=>9, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000494s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea7099f'), "_op"=>:add, "op1"=>9, "op2"=>5, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000471s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea709a0'), "_op"=>:add, "op1"=>8, "op2"=>9, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000477s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea709a1'), "_op"=>:add, "op1"=>8, "op2"=>1, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000568s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:03:14 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7cd2d67adf183ea709a2'), "_op"=>:add, "op1"=>3, "op2"=>0, "t0"=>2016-05-05 17:03:14 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.000432s
+Redirected to http://localhost:3000/operation
+Completed 302 Found in 2ms
+
+
+Started GET "/operation" for ::1 at 2016-05-05 19:04:05 +0200
+Processing by OperationController#new as HTML
+MONGODB | localhost:27017 | practica3_development.insert | STARTED | {"insert"=>"operations", "documents"=>[{"_id"=>BSON::ObjectId('572b7d05d67adf183ea709a3'), "_op"=>:add, "op1"=>7, "op2"=>2, "t0"=>2016-05-05 17:04:05 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | practica3_development.insert | SUCCEEDED | 0.00044s
+  Rendered operation/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1842ms (Views: 1834.4ms)
+
+
+Started GET "/assets/operation.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-05 19:04:07 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-05 19:04:07 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-05 19:04:07 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-05 19:04:07 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-05 19:04:07 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-05 19:04:07 +0200
+
+
+Started GET "/assets/operation.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-05 19:04:07 +0200
