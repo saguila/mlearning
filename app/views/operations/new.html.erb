@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+    <h3>Complete the next operation</h3>
+    </div><form action=<%= answer_operation_path(@operation.id)%> method="post">
+<label><%= @operation.op1 %></label>
+<label><%= @operation.simbol %></label>
+<label><%= @operation.op2 %></label>
+<%= text_field_tag(:respuesta) %>
+<%= submit_tag("Send") %>
+</form>
+  </div>
+<h1>Estimacion</h1><p><%= @operation.solve %></p>
