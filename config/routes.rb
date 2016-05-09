@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'answer/:resp' => 'operation#answer' ,as: :answer_operation
-  get 'operation' => 'operation#new' ,as: :new_operation
+  get 'answer/:resp' => 'operations#answer' ,as: :answer_operation
+  get 'operation' => 'operations#new' ,as: :new_operation
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
