@@ -1,0 +1,18 @@
+<table border="1">
+<%= link_to "Descargar", download_path(format: "csv") %>
+<br>
+<%=link_to 'Export Operations', '/operations/export'%>
+  <tr>
+    <th>Operando 1</th>
+    <th>Operando</th>
+    <th>Operando 2</th>
+    <th>Tiempo</th>
+  </tr>
+  <% @operation.each do |operation| %>
+  <tr>
+    <td><%= operation.op1 %></td>
+    <td><%= operation.op %></td>
+    <td><%= operation.op2 %></td>
+  </tr>
+  <% end %>
+</table>

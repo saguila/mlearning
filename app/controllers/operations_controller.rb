@@ -1,5 +1,5 @@
-class OperationsController < ApplicationController	
-	
+class OperationsController < ApplicationController
+
 	def index
 
 	end
@@ -18,40 +18,34 @@ class OperationsController < ApplicationController
 
 	def new
 		@operation = Operation.create
-'''
-msg = Operation.solve_operation
-		@operation.op1 = rand(10)
-		@operation.op2 = rand(10)
-		i = rand(4)
-		case i
-		when 0
-			@simbol = "+"
-			@operation.op = :add
-		when 1
-			@simbol = "/"
-			@operation.op = :div
-		when 2
-			@simbol = "*"
-			@operation.op = :mul
-		when 3
-			@simbol = "-"
-			@operation.op = :sub
-		end	
-
-		@operation.estimate
-		@operation.t0 = Time.new
-		@operation.save
-		'''
-		#redirect_to new_operation_path
 	end
 
 	def answer
 		@operation = Operation.find(params[:id])
-		if @operation.op1 - @operation.op2 = params[:resp].to_i
-		@operation.t1 = Time.new
-		@operation.save
+		@sol=params[:respuesta].to_i
+		if @sol = params[:respuesta].to_i
+			@operation.t1 = Time.new
+			@operation.save
 		else
-			render new
+			render 'new_operation_path'
 		end
 	end
+	def downloadOperation
+		@operation = Operation.all
+   		respond_to do |format|
+      	  format.html
+          format.csv { send_data @operation.to_csv}
+      end
+	end
+	def export_operations
+	    @operation = Operation.all
+	    operation_csv = CSV.generate({:col_sep => ";"}) do |csv|
+		    csv << ["Operando1","Operacion","Operando2"]
+			@operation.each do |operation|
+				csv << [operation.op1,operation.op,operation.op2]
+	    	end
+	    end
+	    send_data(operation_csv, :type => 'text/csv', :filename => 'all_operations.csv')
+ 	end
+
 end

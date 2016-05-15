@@ -19,7 +19,7 @@ gem 'simple_form'
 # Para poder usar mongodb gemas mongoid y bson
 gem 'mongoid', '~> 5.0'
 gem 'bson_ext'
-gem 'mongoid-enum', git: 'git@github.com:Bartuz/mongoid-enum.git'
+gem 'mongoid-enum' 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -28,7 +28,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'tzinfo-data'
+# para que funcione en windows hay que anañdir la gema tzinf-data
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

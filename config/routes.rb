@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  get 'answer/:resp' => 'operations#answer' ,as: :answer_operation
+  root 'operations#index'
+  post 'operation/:id/answer' => 'operations#answer' ,as: :answer_operation
+  get 'operation/downloadOperations' => 'operations#downloadOperation', as: :download
   get 'operation' => 'operations#new' ,as: :new_operation
+  get 'operations#new' => 'operations#index' ,as: :menu_principal
+  get '/operations/export' => 'operations#export_operations'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

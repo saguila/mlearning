@@ -28,6 +28,7 @@ class Operation
 		@operation.save
 		return @operation
 	end
+
 	def simbol
 		if self.add?
 			return '+'
@@ -39,6 +40,14 @@ class Operation
 			return  '-' 
 		end 
 	end
+def self.to_csv
+      CSV.generate do |csv|
+      	csv << ["Operando 1","Operacion","Operando 2"]
+      	all.each do |operation|
+          csv << [operation.op1,operation.op,operation.op2]
+  		end
+      end
+  	end
 
 def export_to_csv       
     @ops = Operation.find(:all)
@@ -57,11 +66,11 @@ end
 	def solve
 		if self.add?
 			return self.op1 + self.op2
-		elsif self.div?
-			return self.op1 / self.op2
 		elsif self.mul?
-			return 0 if self.op2 == 0
 			return self.op1 * self.op2
+		elsif self.div?
+			return 0 if self.op2 == 0
+			return self.op1  self.op2
 		elsif self.sub?
 			return self.op1 - self.op2
 		end 
@@ -72,6 +81,9 @@ end
 	end
 
 	def estimate
-		#self.estimation = HTTP.get("http://localhost:5000/predict/#{op1.to_f}/").to_s
+		require 'net/http'
+		paramns=self.op1.to_s+'/'+self.op1.to_s+'/'+self.op1.to_s+'/'
+		cadena='http://localhost:5000/predict/'
+		self.estimation = Net::HTTP.get(URI.parse(cadena+paramns))
 	end	
 end

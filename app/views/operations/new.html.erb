@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+ <div class="panel panel-default">
   <div class="panel-body">
     <h3>Complete the next operation</h3>
     </div><form action=<%= answer_operation_path(@operation.id)%> method="post">
@@ -9,4 +9,9 @@
 <%= submit_tag("Send") %>
 </form>
   </div>
-<h1>Estimacion</h1><p><%= @operation.solve %></p>
+Estimacion
+<%= @operation.estimation %>
+<br>
+
+<%= link_to "Export Data", download_path %>
+<h2><%= link_to "Volver al menu principal", menu_principal_path %></h2>
