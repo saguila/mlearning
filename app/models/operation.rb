@@ -82,7 +82,7 @@ end
 
 	def estimate
 		require 'net/http'
-		paramns=self.op1.to_s+'/'+self.op1.to_s+'/'+self.op1.to_s+'/'
+		paramns=self.op1.to_s+'/'+self.op2.to_s+'/'+self.op.to_s+'/'
 		cadena='http://localhost:5000/predict/'
 		self.estimation = Net::HTTP.get(URI.parse(cadena+paramns))
 	end	

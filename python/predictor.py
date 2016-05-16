@@ -16,23 +16,20 @@ def hello():
     return "Hello World!"
 
  
-@app.route("/predict/<int:op1>/<int:op2>/<int:op>/")
+@app.route("/predict/<int:op1>/<int:op2>/<string:op>/")
 def predict(op1,op2,op):
-	data={'Operador1':[op1],
-		  'Operador2':[op2],
-		  'TipoOperacion':[op]
-		 }
-	a=pandas.DataFrame(data, columns=['Operador1', 'Operador2', 'TipoOperacion'])
-	if op == '+':
+	data={'Operador1':[op1], 'Operador2':[op2]}
+	a=pandas.DataFrame(data, columns=['Operador1', 'Operador2'])
+	if op == 'add':
 		b = add_model.predict(a)
-	elif op == '-':
+	elif op == 'sub':
 		b = sub_model.predict(a)
-	elif op == '*':
+	elif op == 'mul':
 		b = mul_model.predict(a)
-	elif op == '/':
+	elif op == 'div':
 		b = div_model.predict(a)
 	else:
-		b = "error"
+		b = "E"
 	return str(b[0])
  
 @app.route("/user/<username>")
